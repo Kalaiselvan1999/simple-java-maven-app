@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Changes updated"'
+                sh 'echo "Changes updated 2"'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
